@@ -58,16 +58,88 @@
 		2452757E26BD553700A07961 /* NotesList */ = {
 			isa = PBXGroup;
 			children = (
-				2452757F26BD553800A07961 /* AppDelegate.swift */,
-				2452758126BD553800A07961 /* SceneDelegate.swift */,
-				2452758326BD553800A07961 /* ViewController.swift */,
-				2452758526BD553800A07961 /* Main.storyboard */,
-				2452758B26BD553E00A07961 /* Assets.xcassets */,
-				2452758D26BD553E00A07961 /* LaunchScreen.storyboard */,
-				2452759026BD553E00A07961 /* Info.plist */,
-				2452758826BD553800A07961 /* NotesList.xcdatamodeld */,
+				2452759A26BD5C6700A07961 /* Application */,
+				2452759B26BD5C7000A07961 /* NotesList */,
+				2452759626BD557B00A07961 /* SupportingFiles */,
 			);
 			path = NotesList;
+			sourceTree = "<group>";
+		};
+		2452759626BD557B00A07961 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2452758826BD553800A07961 /* NotesList.xcdatamodeld */,
+				2452758B26BD553E00A07961 /* Assets.xcassets */,
+				2452759026BD553E00A07961 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2452759726BD55B000A07961 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2452759826BD55BA00A07961 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2452758526BD553800A07961 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2452759926BD55C000A07961 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2452758326BD553800A07961 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2452759A26BD5C6700A07961 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2452759E26BD5CCC00A07961 /* Model */,
+				2452759D26BD5CC600A07961 /* View */,
+				2452759C26BD5CB200A07961 /* Controller */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2452759B26BD5C7000A07961 /* NotesList */ = {
+			isa = PBXGroup;
+			children = (
+				2452759726BD55B000A07961 /* Model */,
+				2452759826BD55BA00A07961 /* View */,
+				2452759926BD55C000A07961 /* Controller */,
+			);
+			path = NotesList;
+			sourceTree = "<group>";
+		};
+		2452759C26BD5CB200A07961 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2452757F26BD553800A07961 /* AppDelegate.swift */,
+				2452758126BD553800A07961 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2452759D26BD5CC600A07961 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2452758D26BD553E00A07961 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2452759E26BD5CCC00A07961 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U48XQQB49;
-				INFOPLIST_FILE = NotesList/Info.plist;
+				INFOPLIST_FILE = NotesList/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U48XQQB49;
-				INFOPLIST_FILE = NotesList/Info.plist;
+				INFOPLIST_FILE = NotesList/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
