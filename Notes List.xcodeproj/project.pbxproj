@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2452757C26BD553700A07961 /* NotesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2452757C26BD553700A07961 /* Notes List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2452757F26BD553800A07961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2452758126BD553800A07961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2452758626BD553800A07961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NotesList.storyboard; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		2452757D26BD553700A07961 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2452757C26BD553700A07961 /* NotesList.app */,
+				2452757C26BD553700A07961 /* Notes List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2452757B26BD553700A07961 /* NotesList */ = {
+		2452757B26BD553700A07961 /* Notes List */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2452759326BD553E00A07961 /* Build configuration list for PBXNativeTarget "NotesList" */;
+			buildConfigurationList = 2452759326BD553E00A07961 /* Build configuration list for PBXNativeTarget "Notes List" */;
 			buildPhases = (
 				2452757826BD553700A07961 /* Sources */,
 				2452757926BD553700A07961 /* Frameworks */,
@@ -166,9 +166,9 @@
 			);
 			dependencies = (
 			);
-			name = NotesList;
+			name = "Notes List";
 			productName = NotesList;
-			productReference = 2452757C26BD553700A07961 /* NotesList.app */;
+			productReference = 2452757C26BD553700A07961 /* Notes List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2452757726BD553700A07961 /* Build configuration list for PBXProject "NotesList" */;
+			buildConfigurationList = 2452757726BD553700A07961 /* Build configuration list for PBXProject "Notes List" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -198,7 +198,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2452757B26BD553700A07961 /* NotesList */,
+				2452757B26BD553700A07961 /* Notes List */,
 			);
 		};
 /* End PBXProject section */
@@ -377,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U48XQQB49;
 				INFOPLIST_FILE = NotesList/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U48XQQB49;
 				INFOPLIST_FILE = NotesList/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2452757726BD553700A07961 /* Build configuration list for PBXProject "NotesList" */ = {
+		2452757726BD553700A07961 /* Build configuration list for PBXProject "Notes List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2452759126BD553E00A07961 /* Debug */,
@@ -419,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2452759326BD553E00A07961 /* Build configuration list for PBXNativeTarget "NotesList" */ = {
+		2452759326BD553E00A07961 /* Build configuration list for PBXNativeTarget "Notes List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2452759426BD553E00A07961 /* Debug */,

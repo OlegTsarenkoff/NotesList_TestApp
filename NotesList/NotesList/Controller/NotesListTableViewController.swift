@@ -15,30 +15,47 @@ class NotesListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
         self.title = "Notes"
-       
         self.navigationItem.leftBarButtonItem = self.editButtonItem
-        
-        
+
     }
 
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        guard segue.identifier == "saveSegue" else { return }
+        let sourceVC = segue.source as! NewNoteTableViewController
+        let note = sourceVC.note
+        
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            notes[selectedIndexPath.row] = note
+            tableView.reloadRows(at: [selectedIndexPath], with: .fade)
+        } else {
+            let newIndexPath = IndexPath(row: notes.count, section: 0)
+            notes.append(note)
+            tableView.insertRows(at: [newIndexPath], with: .fade)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "editNote" else { return }
+        let indexPath = tableView.indexPathForSelectedRow!
+        let note = notes[indexPath.row]
+        let navigationVC = segue.destination as! UINavigationController
+        let newNoteVC = navigationVC.topViewController as! NewNoteTableViewController
+        newNoteVC.note = note
+        newNoteVC.title = "Edit"
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return notes.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "noteCell", for: indexPath) as! NotesTableViewCell
         let note = notes[indexPath.row]
